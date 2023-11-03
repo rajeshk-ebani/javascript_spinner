@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.9.6">
+<title>TrimX Spinner</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body class="spinner-page-web" id="spinner-page-web">
+
+<div id="spinner-container">
+  <img id="spinner" src="assets/spinner_screen/spinner1.png" alt="Loading...">
+</div>
+
+<button onclick="startSpinner()">Start Spinner</button>
+<button onclick="stopSpinner()">Stop Spinner</button>
+
+<script src="script.js"></script>
+	
+	<script>
+		function startSpinner() {
+  const spinner = document.getElementById('spinner');
+  spinner.style.animation = "spin 1s linear infinite";
+}
+
+function stopSpinner() {
+  const spinner = document.getElementById('spinner');
+  spinner.style.animation = "";
+}
+
+		
+		
+		let spinning = false;
+
+function startSpinner() {
+  if (!spinning) {
+    const spinner = document.getElementById('spinner');
+    const totalDegrees = 360 * 5 + Math.floor(Math.random() * 360); // spin for 5 full rotations plus a random segment
+    const duration = 5; // duration of spin in seconds
+    spinner.style.transition = `transform ${duration}s ease-out`;
+    spinner.style.transform = `rotate(${totalDegrees}deg)`;
+    spinning = true;
+
+    setTimeout(() => {
+      // Calculate the final degree (mod 360 to get the exact location on the circle)
+      const finalDegree = totalDegrees % 360;
+      // Calculate which segment it is (assuming 60 degree segments)
+      const segment = Math.floor(finalDegree / 60) + 1; // +1 because segments are 1-indexed
+      alert(`Spinner landed on segment: ${segment}`);
+      spinning = false;
+    }, duration * 1000); // duration in milliseconds
+  }
+}
+
+function stopSpinner() {
+  // Stopping the spinner isn't just a matter of stopping the CSS animation
+  // because we need the spinner to decelerate and stop naturally.
+  // So this functionality would actually be part of the 'startSpinner' method,
+  // and there wouldn't typically be a "stop" button.
+}
+
+		</script>
+  </body>
+</html>
