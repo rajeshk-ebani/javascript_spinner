@@ -1,16 +1,27 @@
+body{
+	font-family:'Brice-Regular';
+}
+@font-face {
+    font-family: 'Brice-Regular';
+    src: url('assets/Fonts/Brice/Brice-Regular.otf');
+    
+   }
+@font-face {
+    font-family: 'Brice-Bold';
+    src: url('assets/Fonts//Brice/Brice-Bold.otf');
 
-
+   }
 
 #spinner-container {
-  width: 400px; /* or the size of your image */
-  height: 400px; /* or the size of your image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #spinner {
-  width: 100%;
+  width: 400px;
   height: auto;
   animation: spin 0s linear infinite; /* Set initial duration to 0 to have it stopped */
 }
@@ -27,8 +38,220 @@
 
 
 #spinner {
-  width: 100%;
-  height: auto;
   transition: transform 0s; /* Make sure this is set to 0s initially */
+}
+.spinner-page-web{
+	background:#fcf58d url("assets/spinning_wheel/Background.png") no-repeat;
+	background-size:cover;
+	background-position: 50% 50%;
+	padding-top:20px;
+}
+.app-head{
+	text-align:center;
+	display: block;
+    padding-bottom: 30px;
+}
+
+h3{
+	font-family:'Brice-Bold';
+	font-size:27px;
+}
+.space15{
+	padding-bottom:15px;
+}
+.space35{
+	padding-bottom:35px;
+}
+.field-enter{
+	font-size:13px;
+	padding-top:0px;
+	margin-top:0px !important;
+	font-weight:200;
+}
+.dta1{
+	margin-bottom:0px !important;
+}
+.dta2{
+	margin-top:0px !important;
+}
+.middle-box{
+	text-align: center;
+	
+}
+.middle-box form{
+	padding: 0px 30px;
+}
+h4{
+	margin:7px 0px;
+	font-size:22px;
+	text-transform: uppercase;
+}
+h5{
+	margin:7px 0px;
+	font-size:22px;
+	padding:0px 30px;
+	line-height:32px;
+}
+.spin-btn{
+	color:#fff;
+	font-size:19px;
+	text-align: center;
+	width:100px;
+	background:#536aae;
+	box-shadow: none !important;
+	border:0px;
+	padding:9px 10px;
+	margin:auto;
+	margin-top:30px;
+	border-radius:4px;
+	font-family:'Brice-Regular';
+	display:block;
+}
+.spin-btn1{
+	color:#fff;
+	font-size:15px;
+	text-align: center;
+	width:150px;
+	background:#536aae;
+	box-shadow: none !important;
+	border:0px;
+	padding:9px 10px;
+	margin:auto;
+	margin-bottom:13px;
+	border-radius:4px;
+	font-family:'Brice-Regular';
+	display:block;
+}
+.sub-btns .spin-btn2{
+	color:#fff;
+	font-size:15px;
+	text-align: center;
+	width:140px;
+	background:#ed6346;
+	box-shadow: none !important;
+	border:0px;
+	padding:12px 10px;
+	margin:auto;
+	margin-bottom:13px;
+	border-radius:4px;
+	font-family:'Brice-Regular';
+	display:block;
+	text-transform:uppercase;
+}
+.login-box .sin-btns{
+	text-align: center;
+	display: block;
+    padding-top: 10px;
+	
+}
+.note{
+	font-size:11px;
+	line-height:18px;
+	padding:2px 8px;
+	font-weight:300;
+}
+.sin-btns {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+}
+.sub-btns{
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+}
+.app-footer {
+    display: block;
+    padding-top: 20px;
+    width: 400px;
+    margin: auto;
+}
+.app-head img{
+	width:160px
+}
+.footer-left img{
+	float:left;
+	width:120px;
+}
+.footer-right{
+	font-family:'Brice-Regular';
+	font-size:17px;
+	padding-top:40px;
+	float: left;
+	width: 180px;
+}
+.app-footer{
+	display: block;
+	padding-top:20px;
+}
+.login-box{
+	background:#fff;
+	border-radius:15px;
+	border:4px solid #546bb1;
+	padding:19px;
+}
+.middle-box .login-box {
+    background: transparent;
+    border-radius: 0px;
+    border: 0px solid #546bb1;
+    padding: 0px;
+}
+.login-box img{
+	width:80%;
+}
+.login_form_box{
+	text-align:center;
+	padding:9px;
+}
+.login-box input{
+	width:100%;
+	display:block;
+	margin:3px 0px;
+	height:40px;
+	border-radius:4px;
+	border:2px solid #bbc5e0;
+	padding:4px 10px;
+	font-family:'Brice-Regular';
+}
+.login-box input:placeholder{
+	font-size:15px;
+	font-family:'Brice-Regular';
+}
+.subs-head-box{
+	background:#536ab0;
+	color:#fff;
+	text-transform: uppercase;
+	    padding: 20px; 
+	font-size:29px;
+	text-align: center;
+	line-height:35px;
+}
+.subs-head{
+	padding:8px;
+	border:1px solid #536ab0;
+	font-family:'Brice-bold';
+}
+
+@media (max-width:380px){
+	.footer-left img{
+	float:left;
+	width:100px;
+}
+.footer-right{
+	font-family:'Brice-Bold';
+	font-size:17px;
+	padding-top:40px;
+	float: left;
+	width: 175px;
+}
+	#spinner {
+  width: 300px;
+}
+	.app-footer {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+}
 }
 

@@ -1,29 +1,57 @@
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width">
-<meta name="generator" content="Astro v2.9.6">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width">
 <title>TrimX Spinner</title>
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css" />
+</head>
 <body class="spinner-page-web" id="spinner-page-web">
-
-<div id="spinner-container">
-  <img id="spinner" src="assets/spinner_screen/spinner1.png" alt="Loading...">
-</div>
-
-<button onclick="startSpinner()">Start Spinner</button>
-<button onclick="stopSpinner()">Stop Spinner</button>
-
-<script src="script.js"></script>
+	<div class="app-head">
+		<img src="logo.png" alt="Logo" title="TrimX">
+		</div>
+<div class="subs-head">
+	<div class="subs-head-box">
+	Share More <br>Earn More
+	</div>
 	
-	<script>
+	</div>
+	<div class="middle-box">
+	<div class="space15"></div>
+		<p class="dta1">Earn</p>
+<h4>TRIM X Cash</h4>
+<p class="dta2">with every share</p>
+<div class="space15"></div>
+		<h5>Just login <br>and simply share <br>with friends.</h5>
+		<div class="space15"></div>
+		<div class="note">
+	<sup>*</sup> All shares shall be males 11 years and above
+			</div>
+		<div class="space15"></div>
+		<p class="field-enter">please enter your details</p>
+		<div class="space15"></div>
+		<div class="login-box">
+		<form>
+			<div class="form-group">
+           <input type="number" class="form-control" id="Phone" placeholder="Mobile No:">
+          </div>
+			
+			<div class="sin-btns">
+	<button href="#" class="spin-btn1">Share OTP</button>
+		</div>
+			<div class="form-group">
+           <input type="text" class="form-control" id="otp" placeholder="Enter OTP:">
+           </div>
+			<div class="sub-btns">
+	<button href="#" class="spin-btn2">Login</button>
+		</div>
+	  </form>
+			</div>
+</div>
+<script src="script.js"></script> 
+<script>
 		function startSpinner() {
   const spinner = document.getElementById('spinner');
   spinner.style.animation = "spin 1s linear infinite";
@@ -34,8 +62,6 @@ function stopSpinner() {
   spinner.style.animation = "";
 }
 
-		
-		
 		let spinning = false;
 
 function startSpinner() {
@@ -66,5 +92,5 @@ function stopSpinner() {
 }
 
 		</script>
-  </body>
+</body>
 </html>
